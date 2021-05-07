@@ -1,12 +1,12 @@
 import styles from "./Timer.module.scss"
 
-import Giro from "./styles"
+import Spin from "./styles"
 
 const Timer = (props) => {
 
     return (
         <div className={styles.timer}>
-            <Giro time={props.time} final={props.final} counter={props.counter}><i class="fas fa-long-arrow-alt-up"></i></Giro>
+            <Spin focusE={props.timeE} totalTimer={props.totalTimer} counter={props.counter}><i className="fas fa-long-arrow-alt-up"></i></Spin>
         </div>
     )
 }
